@@ -13,11 +13,15 @@ def mult(a, b):
 def div(a, b):
     return a / b
 
+def exp(a, b):
+    return a ** b
+
 op_table = {
     "+": add,
     "-": sub,
     "*": mult,
-    "/": div
+    "/": div,
+    "^": exp
 }
 
 def calculate(string):
