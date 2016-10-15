@@ -22,6 +22,10 @@ class TestBasics(unittest.TestCase):
         result = rpn.calculate("3 6 /")
         self.assertEqual(0.5, result)
 
+    def text_exponentiate(self):
+        result = rpn.calculate("2 3 ^")
+        self.assertEqual(8, result)
+
 
     def test_too_many_things(self):
         with self.assertRaises(TypeError):
